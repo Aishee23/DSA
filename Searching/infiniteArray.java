@@ -1,3 +1,6 @@
+// Infinite array means we will never used or we are not allowed to use length of our array in logic building
+
+
 public class InfiniteArray {
     public static void main(String[] args) {
         int[] arr = {3, 5, 7, 9, 10, 90,
