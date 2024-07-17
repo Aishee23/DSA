@@ -30,6 +30,8 @@ public class LinearSearchRecursion {
           }else 
           return  find(arr,target,index+1);
     }
+
+//Function for Duplicate elements
     static ArrayList<Integer> findAllIndex(int[] arr, int target, int index, ArrayList<Integer> list) {
     if (index == arr.length) {
         return list;
