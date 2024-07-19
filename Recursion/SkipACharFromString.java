@@ -21,4 +21,21 @@ public class SkipACharfromString {
             //System.out.println(p);
         }
     }
+    static String skipi(String up)
+    {
+        if(up.isEmpty())
+        {   
+            return " ";
+        }
+        char ch=up.charAt(0);
+        
+        if(ch==('a'))//||'e'||'i'||'o'||'u'))
+        {
+            return skipi(up.substring(1));
+           
+        }else{
+            return ch+ skipi(up.substring(1));
+           
+        }
+    }
 }
