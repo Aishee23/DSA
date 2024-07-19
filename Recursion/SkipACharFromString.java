@@ -2,6 +2,7 @@ public class SkipACharfromString {
     public static void main(String[] args)
     {
        skip("","abacdsas");
+        System.out.println(skipi("aishee"));
     }
     static void skip(String p, String up)
     {
@@ -21,6 +22,8 @@ public class SkipACharfromString {
             //System.out.println(p);
         }
     }
+    //Fuction without taking extra empty string in the argument of the recursive function call
+    
     static String skipi(String up)
     {
         if(up.isEmpty())
