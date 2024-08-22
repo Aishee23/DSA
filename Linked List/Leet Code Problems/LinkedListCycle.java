@@ -26,3 +26,27 @@ public class Solution {
         return false;
     }
 }
+
+
+//length of the cycle
+
+
+public int lenCycle(ListNode head) {
+        ListNode fast =head;
+        ListNode slow =head;
+        while(fast!=null&&fast.next!=null)
+        {   fast=fast.next.next;
+          slow=slow.next;
+            int cnt=0;
+            if(fast==slow)
+            {
+                   ListNode temp=slow;
+                do{
+                    temp=temp.next;
+                    cnt++;
+                }while(temp!=slow);
+                return cnt;
+            }
+        }
+        return 0;
+    }
