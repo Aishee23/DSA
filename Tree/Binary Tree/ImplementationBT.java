@@ -5,11 +5,10 @@
 |       |------>7
 
 
-class BinaryTree {
 
-  public BinaryTree() {
-
-  }
+import java.util.Scanner;
+public class BinaryTree
+{
 
   private static class Node {
     int value;
@@ -84,4 +83,4 @@ class BinaryTree {
      tree.display();
   }
 }
-}
+
