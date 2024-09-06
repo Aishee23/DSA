@@ -141,6 +141,21 @@ public class BST {
             }
             display(node.left,level+1);
         }
+ public void populateSorted(int[] nums){
+  populateSorted(nums,0,nums.length);
+ }
+ private void populateSorted(int[] nums,int start, int end)
+ {
+  if(start>=end)
+  {
+   return;
+  }
+  int mid=(start+end)/2;
+  this.insert(nums[mid]);
+  populatedSorted(nums,start,mid);
+  populatedSorted(nums,mid+1,end);
+  
+ }
      public static void main(String[] args) {
        
         BST tree = new BST();
