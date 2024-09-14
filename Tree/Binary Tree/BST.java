@@ -23,11 +23,6 @@ Right child of9:10
 |       |------>1
 
   */
-
-
-
-
-
 public class BST {
     public class Node{
         private int value;
